@@ -21,12 +21,16 @@
                                 <color key="backgroundColor" red="0.45490196078431372" green="0.19607843137254902" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="MHN-LW-Abi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="62" id="soE-MZ-u41"/>
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Quiz">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="22"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="botaoPressionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="13a-lB-91u"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="gmG-f4-8MP">
                                 <rect key="frame" x="106.66666666666669" y="289" width="217" height="104"/>
@@ -35,14 +39,17 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.32156862745098036" green="0.11764705882352941" blue="0.76078431372549016" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KXG-fh-ffq" secondAttribute="trailing" constant="64" id="6UG-FO-UmK"/>
+                            <constraint firstItem="KXG-fh-ffq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="DQG-E5-xdM"/>
                             <constraint firstItem="KXG-fh-ffq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NKL-76-7Ph"/>
                             <constraint firstItem="KXG-fh-ffq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VaS-kd-GHx"/>
-                            <constraint firstItem="KXG-fh-ffq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="VqQ-6k-SR9"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KXG-fh-ffq" secondAttribute="trailing" constant="64" id="Zqk-Sf-63v"/>
                             <constraint firstItem="gmG-f4-8MP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cBU-bl-9nE"/>
                             <constraint firstItem="KXG-fh-ffq" firstAttribute="top" secondItem="gmG-f4-8MP" secondAttribute="bottom" constant="42" id="hge-qs-2Ch"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="botaoIniciarQuiz" destination="KXG-fh-ffq" id="ktb-x9-SeW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
